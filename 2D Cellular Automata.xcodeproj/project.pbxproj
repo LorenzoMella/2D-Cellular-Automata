@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED0B876317245C80000C899F /* oneDCellularAutomaton.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0B876217245C80000C899F /* oneDCellularAutomaton.m */; };
+		ED891E1D1707571400764DE7 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED891E1C1707571400764DE7 /* Cell.m */; };
+		EDC4A85117275A1E008CE1EE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDC4A85017275A1E008CE1EE /* MainMenu.xib */; };
+		EDD35C2F17064E060033D094 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD35C2E17064E060033D094 /* Cocoa.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		EDD35C3917064E060033D094 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDD35C3717064E060033D094 /* InfoPlist.strings */; };
+		EDD35C3B17064E060033D094 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD35C3A17064E060033D094 /* main.m */; };
+		EDD35C3F17064E060033D094 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = EDD35C3D17064E060033D094 /* Credits.rtf */; };
+		EDD35C4217064E060033D094 /* _DCellularAutomataAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD35C4117064E060033D094 /* _DCellularAutomataAppDelegate.m */; };
+		EDD35C4D17064FC50033D094 /* AutomatonView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD35C4C17064FC50033D094 /* AutomatonView.m */; };
+		EDD35C5017064FEB0033D094 /* CellularAutomaton.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD35C4F17064FEB0033D094 /* CellularAutomaton.m */; };
+		EDEECD6E1725EE7A00BA6D73 /* RuleVisualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEECD6D1725EE7A00BA6D73 /* RuleVisualizer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ED0B876117245C80000C899F /* oneDCellularAutomaton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oneDCellularAutomaton.h; sourceTree = "<group>"; };
+		ED0B876217245C80000C899F /* oneDCellularAutomaton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = oneDCellularAutomaton.m; sourceTree = "<group>"; };
+		ED891E1B1707571400764DE7 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		ED891E1C1707571400764DE7 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
+		EDC4A85017275A1E008CE1EE /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		EDD35C2B17064E060033D094 /* 2D Cellular Automata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2D Cellular Automata.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDD35C2E17064E060033D094 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		EDD35C3117064E060033D094 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		EDD35C3217064E060033D094 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EDD35C3317064E060033D094 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EDD35C3617064E060033D094 /* 2D Cellular Automata-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "2D Cellular Automata-Info.plist"; sourceTree = "<group>"; };
+		EDD35C3817064E060033D094 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EDD35C3A17064E060033D094 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDD35C3C17064E060033D094 /* 2D Cellular Automata-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "2D Cellular Automata-Prefix.pch"; sourceTree = "<group>"; };
+		EDD35C3E17064E060033D094 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		EDD35C4017064E060033D094 /* _DCellularAutomataAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _DCellularAutomataAppDelegate.h; sourceTree = "<group>"; };
+		EDD35C4117064E060033D094 /* _DCellularAutomataAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _DCellularAutomataAppDelegate.m; sourceTree = "<group>"; };
+		EDD35C4B17064FC50033D094 /* AutomatonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutomatonView.h; sourceTree = "<group>"; };
+		EDD35C4C17064FC50033D094 /* AutomatonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutomatonView.m; sourceTree = "<group>"; };
+		EDD35C4E17064FEB0033D094 /* CellularAutomaton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellularAutomaton.h; sourceTree = "<group>"; };
+		EDD35C4F17064FEB0033D094 /* CellularAutomaton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellularAutomaton.m; sourceTree = "<group>"; };
+		EDEECD6C1725EE7A00BA6D73 /* RuleVisualizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuleVisualizer.h; sourceTree = "<group>"; };
+		EDEECD6D1725EE7A00BA6D73 /* RuleVisualizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuleVisualizer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDD35C2817064E060033D094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDD35C2F17064E060033D094 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDD35C2217064E060033D094 = {
+			isa = PBXGroup;
+			children = (
+				EDD35C3417064E060033D094 /* 2D Cellular Automata */,
+				EDD35C2D17064E060033D094 /* Frameworks */,
+				EDD35C2C17064E060033D094 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDD35C2C17064E060033D094 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDD35C2B17064E060033D094 /* 2D Cellular Automata.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDD35C2D17064E060033D094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDD35C2E17064E060033D094 /* Cocoa.framework */,
+				EDD35C3017064E060033D094 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDD35C3017064E060033D094 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDD35C3117064E060033D094 /* AppKit.framework */,
+				EDD35C3217064E060033D094 /* CoreData.framework */,
+				EDD35C3317064E060033D094 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		EDD35C3417064E060033D094 /* 2D Cellular Automata */ = {
+			isa = PBXGroup;
+			children = (
+				EDD35C4017064E060033D094 /* _DCellularAutomataAppDelegate.h */,
+				EDD35C4117064E060033D094 /* _DCellularAutomataAppDelegate.m */,
+				EDD35C4B17064FC50033D094 /* AutomatonView.h */,
+				EDD35C4C17064FC50033D094 /* AutomatonView.m */,
+				EDD35C4E17064FEB0033D094 /* CellularAutomaton.h */,
+				EDD35C4F17064FEB0033D094 /* CellularAutomaton.m */,
+				ED0B876117245C80000C899F /* oneDCellularAutomaton.h */,
+				ED0B876217245C80000C899F /* oneDCellularAutomaton.m */,
+				ED891E1B1707571400764DE7 /* Cell.h */,
+				ED891E1C1707571400764DE7 /* Cell.m */,
+				EDEECD6C1725EE7A00BA6D73 /* RuleVisualizer.h */,
+				EDEECD6D1725EE7A00BA6D73 /* RuleVisualizer.m */,
+				EDC4A85017275A1E008CE1EE /* MainMenu.xib */,
+				EDD35C3517064E060033D094 /* Supporting Files */,
+			);
+			path = "2D Cellular Automata";
+			sourceTree = "<group>";
+		};
+		EDD35C3517064E060033D094 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDD35C3617064E060033D094 /* 2D Cellular Automata-Info.plist */,
+				EDD35C3717064E060033D094 /* InfoPlist.strings */,
+				EDD35C3A17064E060033D094 /* main.m */,
+				EDD35C3C17064E060033D094 /* 2D Cellular Automata-Prefix.pch */,
+				EDD35C3D17064E060033D094 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDD35C2A17064E060033D094 /* 2D Cellular Automata */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDD35C4817064E070033D094 /* Build configuration list for PBXNativeTarget "2D Cellular Automata" */;
+			buildPhases = (
+				EDD35C2717064E060033D094 /* Sources */,
+				EDD35C2817064E060033D094 /* Frameworks */,
+				EDD35C2917064E060033D094 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "2D Cellular Automata";
+			productName = "2D Cellular Automata";
+			productReference = EDD35C2B17064E060033D094 /* 2D Cellular Automata.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDD35C2317064E060033D094 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = 2DCellularAutomata;
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Lorenzo Mella";
+			};
+			buildConfigurationList = EDD35C2617064E060033D094 /* Build configuration list for PBXProject "2D Cellular Automata" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EDD35C2217064E060033D094;
+			productRefGroup = EDD35C2C17064E060033D094 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDD35C2A17064E060033D094 /* 2D Cellular Automata */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDD35C2917064E060033D094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDD35C3917064E060033D094 /* InfoPlist.strings in Resources */,
+				EDD35C3F17064E060033D094 /* Credits.rtf in Resources */,
+				EDC4A85117275A1E008CE1EE /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDD35C2717064E060033D094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDD35C3B17064E060033D094 /* main.m in Sources */,
+				EDD35C4217064E060033D094 /* _DCellularAutomataAppDelegate.m in Sources */,
+				EDD35C4D17064FC50033D094 /* AutomatonView.m in Sources */,
+				EDD35C5017064FEB0033D094 /* CellularAutomaton.m in Sources */,
+				ED891E1D1707571400764DE7 /* Cell.m in Sources */,
+				ED0B876317245C80000C899F /* oneDCellularAutomaton.m in Sources */,
+				EDEECD6E1725EE7A00BA6D73 /* RuleVisualizer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EDD35C3717064E060033D094 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDD35C3817064E060033D094 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EDD35C3D17064E060033D094 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDD35C3E17064E060033D094 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDD35C4617064E070033D094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EDD35C4717064E070033D094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EDD35C4917064E070033D094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "2D Cellular Automata/2D Cellular Automata-Prefix.pch";
+				INFOPLIST_FILE = "2D Cellular Automata/2D Cellular Automata-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EDD35C4A17064E070033D094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "2D Cellular Automata/2D Cellular Automata-Prefix.pch";
+				INFOPLIST_FILE = "2D Cellular Automata/2D Cellular Automata-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDD35C2617064E060033D094 /* Build configuration list for PBXProject "2D Cellular Automata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDD35C4617064E070033D094 /* Debug */,
+				EDD35C4717064E070033D094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDD35C4817064E070033D094 /* Build configuration list for PBXNativeTarget "2D Cellular Automata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDD35C4917064E070033D094 /* Debug */,
+				EDD35C4A17064E070033D094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDD35C2317064E060033D094 /* Project object */;
+}
