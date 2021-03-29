@@ -25,6 +25,7 @@
 		ED0B876217245C80000C899F /* oneDCellularAutomaton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = oneDCellularAutomaton.m; sourceTree = "<group>"; };
 		ED891E1B1707571400764DE7 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
 		ED891E1C1707571400764DE7 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
+		ED904F2F2610F6760070371A /* defs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defs.h; sourceTree = "<group>"; };
 		EDC4A85017275A1E008CE1EE /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		EDD35C2B17064E060033D094 /* 2D Cellular Automata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2D Cellular Automata.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD35C2E17064E060033D094 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -103,6 +104,7 @@
 				EDD35C4C17064FC50033D094 /* AutomatonView.m */,
 				EDD35C4E17064FEB0033D094 /* CellularAutomaton.h */,
 				EDD35C4F17064FEB0033D094 /* CellularAutomaton.m */,
+				ED904F2F2610F6760070371A /* defs.h */,
 				ED0B876117245C80000C899F /* oneDCellularAutomaton.h */,
 				ED0B876217245C80000C899F /* oneDCellularAutomaton.m */,
 				ED891E1B1707571400764DE7 /* Cell.h */,

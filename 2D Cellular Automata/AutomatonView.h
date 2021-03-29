@@ -6,8 +6,11 @@
 //  Copyright (c) 2013 Lorenzo Mella. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+
 #import "CellularAutomaton.h"
+
+#import <Cocoa/Cocoa.h>
+
 
 @interface AutomatonView : NSView
 

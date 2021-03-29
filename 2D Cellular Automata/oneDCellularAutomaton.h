@@ -6,8 +6,9 @@
 //  Copyright (c) 2013 Lorenzo Mella. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "Cell.h"
+
+#import <Foundation/Foundation.h>
 
 @interface oneDCellularAutomaton : NSObject
 {

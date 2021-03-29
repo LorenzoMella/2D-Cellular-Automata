@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#define GRID_DIMENSION 200
 
 @interface Cell : NSObject
 

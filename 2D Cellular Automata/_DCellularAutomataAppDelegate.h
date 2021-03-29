@@ -6,10 +6,14 @@
 //  Copyright (c) 2013 Lorenzo Mella. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import "defs.h"
+
+#import "AutomatonView.h"
 #import "CellularAutomaton.h"
 #import "oneDCellularAutomaton.h"
-#import "AutomatonView.h"
+
+#import <Cocoa/Cocoa.h>
+
 
 @interface _DCellularAutomataAppDelegate : NSObject <NSApplicationDelegate>
 
@@ -20,9 +24,11 @@
 @property (weak) IBOutlet NSTextField *ruleCodeField;
 @property (weak) IBOutlet NSMatrix *zeroCheckBoxes;
 @property (weak) IBOutlet NSMatrix *oneCheckBoxes;
+
 // Bound variables
 @property int ruleCode;
 @property NSMutableArray *testArray;
+
 // Other model variables
 @property (strong) CellularAutomaton *currentAutomaton;
 

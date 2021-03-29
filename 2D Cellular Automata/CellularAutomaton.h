@@ -6,8 +6,11 @@
 //  Copyright (c) 2013 Lorenzo Mella. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "defs.h"
 #import "Cell.h"
+
+#import <Foundation/Foundation.h>
+
 
 @interface CellularAutomaton : NSObject
 

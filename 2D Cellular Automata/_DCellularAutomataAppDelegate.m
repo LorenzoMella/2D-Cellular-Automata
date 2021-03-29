@@ -11,7 +11,7 @@
 
 @implementation _DCellularAutomataAppDelegate
 {
-    int borderType;
+    enum BorderType borderType;
     NSTimer *timer;
     NSTimer *demoTimer;
 }
@@ -24,9 +24,10 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     
-    self.currentAutomaton = [[CellularAutomaton alloc] initWithZeroes];
-    [self.currentAutomaton setRuleWithCode:224];
-    ruleCode = 224;
+    self.currentAutomaton = [[CellularAutomaton alloc] initWithNWGliderAtI:GRID_DIMENSION / 2 andJ:GRID_DIMENSION / 2];
+    ruleCode = EXAMPLE_RULE;
+    [self.currentAutomaton setRuleWithCode:ruleCode];
+    [ruleCodeField setIntegerValue:ruleCode];
     [self.automatonView setGrid:[currentAutomaton grid]];
     self.automatonView.liveCellColor = [NSColor yellowColor];
     self.automatonView.deadCellColor = [NSColor colorWithCalibratedHue:0.5 saturation:0.62 brightness:0.32 alpha:1.0];
@@ -46,11 +47,10 @@
 
 - (IBAction)startStop:(id)sender {
     
-    if(timer == nil) {
+    if (timer == nil) {
         NSLog(@"Start pressed");
         timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(stepManager) userInfo:nil repeats:YES];
-    }
-    else {
+    } else {
         NSLog(@"Stop pressed");
         [timer invalidate];
         timer = nil;
@@ -64,11 +64,10 @@
 
 - (IBAction)demonstration:(id)sender {
     
-    if(demoTimer == nil) {
+    if (demoTimer == nil) {
         NSLog(@"Demonstration pressed");
         demoTimer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(demoManager) userInfo:nil repeats:YES];
-    }
-    else {
+    } else {
         NSLog(@"Demonstration pressed again");
         [timer invalidate];
         [demoTimer invalidate];
@@ -78,12 +77,13 @@
 }
 
 - (void)demoManager {
-    static int currentRule = 224;
+    static int currentRule = EXAMPLE_RULE;
     
     ruleCode = currentRule;
     
-    if(timer)
+    if (timer)
         [timer invalidate];
+    
     [self erase:self];
     timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(stepManager) userInfo:nil repeats:YES];
     currentRule += 2;
@@ -94,17 +94,18 @@
 - (void)stepManager {
     [self.currentAutomaton evolutionStepWithBorderType:borderType];
     
-    if(ruleCode >= 0 && ruleCode < 262144)
+    if (0 <= ruleCode && ruleCode < 262144) {
         [self.currentAutomaton setRuleWithCode:ruleCode];
-    else {
-        [ruleCodeField setIntValue:224];
-        [self.currentAutomaton setRuleWithCode:224];
+    } else {
+        [ruleCodeField setIntValue:EXAMPLE_RULE];
+        [self.currentAutomaton setRuleWithCode:EXAMPLE_RULE];
     }
     
     for(int t = 0; t < 9; ++t) {
         [self.zeroCheckBoxes setState:[self.currentAutomaton nextStateFromState:0 andTotal:t] atRow:8-t column:0];
         [self.oneCheckBoxes setState:[self.currentAutomaton nextStateFromState:1 andTotal:t] atRow:8-t column:0];
     }
+    
     [self.automatonView setGrid:[currentAutomaton grid]];
     [self.automatonView setNeedsDisplay:YES];
 }
